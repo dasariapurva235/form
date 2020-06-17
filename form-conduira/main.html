@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration form</title>
+</head>
+ <link rel="stylesheet" type="text/css" href="style.css">
+<body>
+	
+ <div class="loginbox">
+    <img src="icon.png" class="icon">
+        <h1>Registration form</h1>
+        <form action="register.php" method="post">
+            <p>First Name:</p>
+            <input type="text" name="firstname" placeholder="Enter firstname">
+            <p>Last Name:</p>
+            <input type="text" name="lastname" placeholder="Enter lastname">
+            <p>Email Id:</p>
+            <input type="email" name="email" placeholder="Enter email address">
+            <p>Branch:</p>
+            <div class="custom-select" style="width:200px;">
+              <select name="branch">
+    				<option value="branch">Select branch:</option>
+    				<option value="cse">CSE</option>
+    				<option value="ece">ECE</option>
+    				<option value="eee">EEE</option>
+   				    <option value="mech">Mechanical</option>
+    				<option value="civil">Civil</option>
+   					<option value="other">Other</option>
+              </select>
+            </div>
+            <input type="submit" name="submit" value="Register">
+        </form>
+    </div>
+
+</body>
+</head>
+</html>
